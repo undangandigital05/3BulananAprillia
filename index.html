@@ -161,35 +161,6 @@
         font-family: "Cinzel", serif;
       }
 
-      .gallery-container {
-            scroll-snap-type: x mandatory;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        .gallery-container::-webkit-scrollbar {
-            display: none;
-        }
-        .gallery-item {
-            scroll-snap-align: center;
-        }
-        .arrow-btn {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        .arrow-btn:hover {
-            background: rgba(0, 0, 0, 0.7);
-            transform: scale(1.1);
-        }
-        .arrow-btn:active {
-            transform: scale(0.95);
-        }
-        .gallery-item img {
-            transition: transform 0.3s ease;
-        }
-        .gallery-item:hover img {
-            transform: scale(1.02);
-        }
 
          @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
         
@@ -238,7 +209,7 @@
             height: 30px;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 30"><g fill="none" stroke="%23f496c5" stroke-width="1.5" opacity="0.8"><path d="M10 15c10-8 20-8 30 0 10 8 20 8 30 0 10-8 20-8 30 0"/><circle cx="25" cy="10" r="1.5" fill="%23ec4899"/><circle cx="50" cy="5" r="2" fill="%23f8b4cb"/><circle cx="75" cy="10" r="1.5" fill="%23ec4899"/><path d="M20 20l5-3 5 3M70 20l5-3 5 3" stroke="%23f496c5"/></g></svg>') no-repeat center;
             background-size: contain;
-            margin: 1rem auto;
+            margin: 1px auto;
         }
         /* Hilangkan scrollbar */
     .no-scrollbar {
@@ -431,28 +402,35 @@
       </section>
       
       <section class="scroll-animate px-4 py-10 text-center">
-    <h2 class="text-3xl cinzel-font mb-5 -mt-5">Galeri</h2>
+    <h2 class="text-3xl cinzel-font mb-5 mt-5">Galeri</h2>
 
-  <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
-  <div class="aspect-video">
-    <img src="./img/april1.jpg" alt="Gambar 1" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+ <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+  <div class="w-full h-full min-h-[150px] flex items-center justify-center bg-white rounded-lg">
+    <img src="./img/april1.jpg" alt="Gambar 1" onclick="openLightbox(this)"
+      class="max-w-full max-h-full object-contain rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
-  <div class="aspect-video">
-    <img src="./img/april2.jpg" alt="Gambar 2" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  <div class="w-full h-full min-h-[150px] flex items-center justify-center bg-white rounded-lg">
+    <img src="./img/april2.jpg" alt="Gambar 2" onclick="openLightbox(this)"
+      class="max-w-full max-h-full object-contain rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
-  <div class="aspect-video">
-    <img src="./img/april3.jpg" alt="Gambar 3" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  <div class="w-full h-full min-h-[150px] flex items-center justify-center bg-white rounded-lg">
+    <img src="./img/april3.jpg" alt="Gambar 3" onclick="openLightbox(this)"
+      class="max-w-full max-h-full object-contain rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
-  <div class="aspect-video">
-    <img src="./img/april4.jpg" alt="Gambar 4" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  <div class="w-full h-full min-h-[150px] flex items-center justify-center bg-white rounded-lg">
+    <img src="./img/april4.jpg" alt="Gambar 4" onclick="openLightbox(this)"
+      class="max-w-full max-h-full object-contain rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
-  <div class="aspect-video">
-    <img src="./img/april5.jpg" alt="Gambar 5" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  <div class="w-full h-full min-h-[150px] flex items-center justify-center bg-white rounded-lg">
+    <img src="./img/april5.jpg" alt="Gambar 5" onclick="openLightbox(this)"
+      class="max-w-full max-h-full object-contain rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
-  <div class="aspect-video">
-    <img src="./img/april6.jpg" alt="Gambar 6" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  <div class="w-full h-full min-h-[150px] flex items-center justify-center bg-white rounded-lg">
+    <img src="./img/april6.jpg" alt="Gambar 6" onclick="openLightbox(this)"
+      class="max-w-full max-h-full object-contain rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
 </div>
+
 
        <!-- LIGHTBOX -->
 <div id="lightbox" class="fixed inset-0 flex items-center justify-center z-50 hidden scroll-animate">
