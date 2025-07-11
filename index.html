@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undangan 3 Bulanan April</title>
+    <title>Undangan 3 bulanan April</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -240,6 +240,14 @@
             background-size: contain;
             margin: 1rem auto;
         }
+        /* Hilangkan scrollbar */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
     </style>
   </head>
   <body class="h-full w-full m-0 p-0">
@@ -297,7 +305,7 @@
             id="openInvitation"
             onclick="openInvitation()"
           >
-            <i class="bi bi-envelope-paper-fill"></i>Buka Undangan
+            <i class="bi bi-envelope-paper-fill"></i>Open Invitation
           </a>
         </div>
       </div>
@@ -311,7 +319,7 @@
         <div class="w-20">
           <img
             src="./img/latar/bunga-hias.png"
-            alt="Bunga Ulang Tahun"
+            alt="Bunga"
             class="w-full h-auto"
           />
         </div>
@@ -425,91 +433,84 @@
       <section class="scroll-animate px-4 py-10 text-center">
     <h2 class="text-3xl cinzel-font mb-5 -mt-5">Galeri</h2>
 
-  <div class="container mx-auto px-4 py-8 scroll-animate">        
-        <!-- Gallery Container -->
-        <div class="relative max-w-md mx-auto">
-            <!-- Photo Gallery -->
-            <div id="gallery" class="gallery-container flex overflow-x-auto space-x-4 pb-4">
-                <!-- Photo 1 -->
-                <div class="gallery-item flex-shrink-0 w-full">
-                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="./img/april1.jpg" 
-                             alt="Foto 1" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Photo 2 -->
-                <div class="gallery-item flex-shrink-0 w-full">
-                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="./img/april2.jpg" 
-                             alt="Foto 2" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Photo 3 -->
-                <div class="gallery-item flex-shrink-0 w-full">
-                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="./img/april3.jpg" 
-                             alt="Foto 3" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Photo 4 -->
-                <div class="gallery-item flex-shrink-0 w-full">
-                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="./img/april4.jpg" 
-                             alt="Foto 4" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Photo 5 -->
-                <div class="gallery-item flex-shrink-0 w-full">
-                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="./img/april5.jpg" 
-                             alt="Foto 5" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Photo 6 -->
-                <div class="gallery-item flex-shrink-0 w-full">
-                    <div class="relative rounded-lg overflow-hidden shadow-2xl">
-                        <img src="./img/april6.jpg" 
-                             alt="Foto 6" 
-                             class="w-full h-48 object-cover">
-                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Navigation Arrows -->
-            <button id="prevBtn" class="arrow-btn absolute left-2 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full text-white flex items-center justify-center z-10">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            
-            <button id="nextBtn" class="arrow-btn absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full text-white flex items-center justify-center z-10">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
+  <div class="container mx-auto px-4 py-8 space-y-8">
+
+    <!-- =============================== -->
+    <!-- ROW 1 : Foto 1 & 2 -->
+    <!-- =============================== -->
+    <div class="relative max-w-xl mx-auto overflow-hidden group">
+      <div id="slider-1" class="flex transition-transform duration-700 ease-in-out no-scrollbar">
+        <div class="w-full flex-shrink-0">
+          <img src="./img/april1.jpg" alt="Foto 1" class="w-full h-64 object-cover rounded-lg shadow-xl" />
         </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/april2.jpg" alt="Foto 2" class="w-full h-64 object-cover rounded-lg shadow-xl" />
+        </div>
+      </div>
+      <!-- Panah -->
+      <button data-slider="slider-1" data-direction="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button data-slider="slider-1" data-direction="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- =============================== -->
+    <!-- ROW 2 : Foto 3 & 4 -->
+    <!-- =============================== -->
+    <div class="relative max-w-xl mx-auto overflow-hidden group">
+      <div id="slider-2" class="flex transition-transform duration-700 ease-in-out no-scrollbar">
+        <div class="w-full flex-shrink-0">
+          <img src="./img/april3.jpg" alt="Foto 3" class="w-full h-64 object-cover rounded-lg shadow-xl" />
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/april4.jpg" alt="Foto 4" class="w-full h-64 object-cover rounded-lg shadow-xl" />
+        </div>
+      </div>
+      <!-- Panah -->
+      <button data-slider="slider-2" data-direction="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button data-slider="slider-2" data-direction="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- =============================== -->
+    <!-- ROW 3 : Foto 5 & 6 -->
+    <!-- =============================== -->
+    <div class="relative max-w-xl mx-auto overflow-hidden group">
+      <div id="slider-3" class="flex transition-transform duration-700 ease-in-out no-scrollbar">
+        <div class="w-full flex-shrink-0">
+          <img src="./img/april5.jpg" alt="Foto 5" class="w-full h-64 object-cover rounded-lg shadow-xl" />
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="./img/april6.jpg" alt="Foto 6" class="w-full h-64 object-cover rounded-lg shadow-xl" />
+        </div>
+      </div>
+      <!-- Panah -->
+      <button data-slider="slider-3" data-direction="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button data-slider="slider-3" data-direction="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
         
         <!-- Dots Indicator -->
         <div class="flex justify-center mt-6 space-x-2">
@@ -518,11 +519,6 @@
             </div>
         </div>
         
-        <!-- Photo Counter -->
-        <div class="text-center mt-4">
-            <span id="counter" class="text-white text-sm bg-gray-800 px-3 py-1 rounded-full">1 / 6</span>
-        </div>
-    </div>
 
 </section>
 
@@ -863,5 +859,46 @@
         updateCounter();
         updateDots();
     </script>
+
+    <!-- galeri -->
+     <script>
+    // Object untuk menyimpan index masing-masing slider
+    const sliders = {
+      'slider-1': 0,
+      'slider-2': 0,
+      'slider-3': 0
+    };
+
+    // Atur event tombol
+    document.querySelectorAll('button[data-slider]').forEach(button => {
+      button.addEventListener('click', () => {
+        const sliderId = button.dataset.slider;
+        const direction = button.dataset.direction;
+        const slider = document.getElementById(sliderId);
+        const slides = slider.children;
+        const slideCount = slides.length;
+
+        if (direction === 'next') {
+          sliders[sliderId] = (sliders[sliderId] + 1) % slideCount;
+        } else {
+          sliders[sliderId] = (sliders[sliderId] - 1 + slideCount) % slideCount;
+        }
+
+        slider.style.transform = `translateX(-${sliders[sliderId] * 100}%)`;
+      });
+    });
+
+    // Autoplay setiap slider
+    Object.keys(sliders).forEach(sliderId => {
+      setInterval(() => {
+        const slider = document.getElementById(sliderId);
+        const slides = slider.children;
+        const slideCount = slides.length;
+        sliders[sliderId] = (sliders[sliderId] + 1) % slideCount;
+        slider.style.transform = `translateX(-${sliders[sliderId] * 100}%)`;
+      }, 3000);
+    });
+  </script>
+
   </body>
 </html>
