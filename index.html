@@ -348,7 +348,7 @@
 
       <!-- Countdown -->
       <div
-        class="flex justify-center gap-2 mt-10 flex-nowrap overflow-x-auto px-2"
+        class="flex justify-center gap-2 mt-10 flex-nowrap px-2"
       >
         <div
           class="scroll-animate bg-pink-300 text-white w-16 h-16 md:w-20 md:h-20 rounded-full flex flex-col justify-center items-center shrink-0"
@@ -433,93 +433,37 @@
       <section class="scroll-animate px-4 py-10 text-center">
     <h2 class="text-3xl cinzel-font mb-5 -mt-5">Galeri</h2>
 
-  <div class="container mx-auto px-4 py-8 space-y-8">
-
-    <!-- =============================== -->
-    <!-- ROW 1 : Foto 1 & 2 -->
-    <!-- =============================== -->
-    <div class="relative max-w-xl mx-auto overflow-hidden group">
-      <div id="slider-1" class="flex transition-transform duration-700 ease-in-out no-scrollbar">
-        <div class="w-full flex-shrink-0">
-          <img src="./img/april1.jpg" alt="Foto 1" class="w-full h-auto object-cover rounded-lg shadow-xl" />
-        </div>
-        <div class="w-full flex-shrink-0">
-          <img src="./img/april2.jpg" alt="Foto 2" class="w-full h-auto object-cover rounded-lg shadow-xl" />
-        </div>
-      </div>
-      <!-- Panah -->
-      <button data-slider="slider-1" data-direction="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button data-slider="slider-1" data-direction="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
-
-    <!-- =============================== -->
-    <!-- ROW 2 : Foto 3 & 4 -->
-    <!-- =============================== -->
-    <div class="relative max-w-xl mx-auto overflow-hidden group">
-      <div id="slider-2" class="flex transition-transform duration-700 ease-in-out no-scrollbar">
-        <div class="w-full flex-shrink-0">
-          <img src="./img/april3.jpg" alt="Foto 3" class="w-full h-auto object-cover rounded-lg shadow-xl" />
-        </div>
-        <div class="w-full flex-shrink-0">
-          <img src="./img/april4.jpg" alt="Foto 4" class="w-full h-auto object-cover rounded-lg shadow-xl" />
-        </div>
-      </div>
-      <!-- Panah -->
-      <button data-slider="slider-2" data-direction="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button data-slider="slider-2" data-direction="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
-
-    <!-- =============================== -->
-    <!-- ROW 3 : Foto 5 & 6 -->
-    <!-- =============================== -->
-    <div class="relative max-w-xl mx-auto overflow-hidden group">
-      <div id="slider-3" class="flex transition-transform duration-700 ease-in-out no-scrollbar">
-        <div class="w-full flex-shrink-0">
-          <img src="./img/april5.jpg" alt="Foto 5" class="w-full h-auto object-cover rounded-lg shadow-xl" />
-        </div>
-        <div class="w-full flex-shrink-0">
-          <img src="./img/april6.jpg" alt="Foto 6" class="w-full h-auto object-cover rounded-lg shadow-xl" />
-        </div>
-      </div>
-      <!-- Panah -->
-      <button data-slider="slider-3" data-direction="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button data-slider="slider-3" data-direction="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
-
+  <div class="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+  <div class="aspect-video">
+    <img src="./img/april1.jpg" alt="Gambar 1" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
   </div>
-        
-        <!-- Dots Indicator -->
-        <div class="flex justify-center mt-6 space-x-2">
-            <div id="dots" class="flex space-x-2">
-                <!-- Dots will be generated by JavaScript -->
-            </div>
-        </div>
-        
+  <div class="aspect-video">
+    <img src="./img/april2.jpg" alt="Gambar 2" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  </div>
+  <div class="aspect-video">
+    <img src="./img/april3.jpg" alt="Gambar 3" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  </div>
+  <div class="aspect-video">
+    <img src="./img/april4.jpg" alt="Gambar 4" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  </div>
+  <div class="aspect-video">
+    <img src="./img/april5.jpg" alt="Gambar 5" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  </div>
+  <div class="aspect-video">
+    <img src="./img/april6.jpg" alt="Gambar 6" onclick="openLightbox(this)" class="w-full h-full object-cover rounded-lg cursor-pointer transition hover:scale-105 hover:shadow-lg" />
+  </div>
+</div>
 
+       <!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 flex items-center justify-center z-50 hidden scroll-animate">
+  <!-- TOMBOL CLOSE -->
+  <button onclick="closeLightbox()" class="absolute top-4 right-4 text-pink-400 text-4xl font-bold transition">
+  &times;
+</button>
+
+  
+  <img id="lightbox-img" src="" alt="Preview" class="max-h-[80vh] max-w-[90vw] rounded-lg shadow-2xl transition transform scale-90 opacity-0 duration-300 scroll-animate" />
+</div>
 </section>
 
 
@@ -733,172 +677,46 @@
           icon.classList.add("bi-volume-mute-fill");
         }
       }
-    </script>
-
-<!-- galeri -->
-    <script>
-        const gallery = document.getElementById('gallery');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const counter = document.getElementById('counter');
-        const dotsContainer = document.getElementById('dots');
-        
-        let currentIndex = 0;
-        const totalPhotos = 6;
-        
-        // Generate dots
-        function generateDots() {
-            for (let i = 0; i < totalPhotos; i++) {
-                const dot = document.createElement('div');
-                dot.className = 'w-2 h-2 rounded-full cursor-pointer transition-all duration-300';
-                dot.style.backgroundColor = i === 0 ? 'white' : 'rgba(255, 255, 255, 0.5)';
-                dot.addEventListener('click', () => goToSlide(i));
-                dotsContainer.appendChild(dot);
-            }
-        }
-        
-        // Update dots
-        function updateDots() {
-            const dots = dotsContainer.children;
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].style.backgroundColor = i === currentIndex ? 'white' : 'rgba(255, 255, 255, 0.5)';
-            }
-        }
-        
-        // Go to specific slide
-        function goToSlide(index) {
-            currentIndex = index;
-            const scrollAmount = gallery.children[0].offsetWidth * currentIndex;
-            gallery.scrollTo({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-            updateCounter();
-            updateDots();
-        }
-        
-        // Update counter
-        function updateCounter() {
-            counter.textContent = `${currentIndex + 1} / ${totalPhotos}`;
-        }
-        
-        // Next photo
-        function nextPhoto() {
-            currentIndex = (currentIndex + 1) % totalPhotos;
-            goToSlide(currentIndex);
-        }
-        
-        // Previous photo
-        function prevPhoto() {
-            currentIndex = (currentIndex - 1 + totalPhotos) % totalPhotos;
-            goToSlide(currentIndex);
-        }
-        
-        // Event listeners
-        nextBtn.addEventListener('click', nextPhoto);
-        prevBtn.addEventListener('click', prevPhoto);
-        
-        // Touch/swipe support
-        let startX = 0;
-        let endX = 0;
-        
-        gallery.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-        });
-        
-        gallery.addEventListener('touchmove', (e) => {
-            endX = e.touches[0].clientX;
-        });
-        
-        gallery.addEventListener('touchend', () => {
-            const deltaX = startX - endX;
-            if (Math.abs(deltaX) > 50) {
-                if (deltaX > 0) {
-                    nextPhoto();
-                } else {
-                    prevPhoto();
-                }
-            }
-        });
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                prevPhoto();
-            } else if (e.key === 'ArrowRight') {
-                nextPhoto();
-            }
-        });
-        
-        // Auto-play (optional)
-        let autoPlayInterval;
-        
-        function startAutoPlay() {
-            autoPlayInterval = setInterval(nextPhoto, 4000);
-        }
-        
-        function stopAutoPlay() {
-            clearInterval(autoPlayInterval);
-        }
-        
-        // Start auto-play
-        startAutoPlay();
-        
-        // Pause auto-play on hover
-        gallery.addEventListener('mouseenter', stopAutoPlay);
-        gallery.addEventListener('mouseleave', startAutoPlay);
-        
-        // Pause auto-play on touch
-        gallery.addEventListener('touchstart', stopAutoPlay);
-        gallery.addEventListener('touchend', () => {
-            setTimeout(startAutoPlay, 3000);
-        });
-        
-        // Initialize
-        generateDots();
-        updateCounter();
-        updateDots();
-    </script>
+    </script>  
 
     <!-- galeri -->
-     <script>
-    // Object untuk menyimpan index masing-masing slider
-    const sliders = {
-      'slider-1': 0,
-      'slider-2': 0,
-      'slider-3': 0
-    };
+   <script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = img.src;
+    lightbox.classList.remove('hidden');
 
-    // Atur event tombol
-    document.querySelectorAll('button[data-slider]').forEach(button => {
-      button.addEventListener('click', () => {
-        const sliderId = button.dataset.slider;
-        const direction = button.dataset.direction;
-        const slider = document.getElementById(sliderId);
-        const slides = slider.children;
-        const slideCount = slides.length;
+    // Animate image in
+    setTimeout(() => {
+      lightboxImg.classList.remove('scale-90', 'opacity-0');
+      lightboxImg.classList.add('scale-100', 'opacity-100');
+    }, 50);
+  }
 
-        if (direction === 'next') {
-          sliders[sliderId] = (sliders[sliderId] + 1) % slideCount;
-        } else {
-          sliders[sliderId] = (sliders[sliderId] - 1 + slideCount) % slideCount;
-        }
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
 
-        slider.style.transform = `translateX(-${sliders[sliderId] * 100}%)`;
-      });
-    });
+    // Animate image out
+    lightboxImg.classList.remove('scale-100', 'opacity-100');
+    lightboxImg.classList.add('scale-90', 'opacity-0');
 
-    // Autoplay setiap slider
-    Object.keys(sliders).forEach(sliderId => {
-      setInterval(() => {
-        const slider = document.getElementById(sliderId);
-        const slides = slider.children;
-        const slideCount = slides.length;
-        sliders[sliderId] = (sliders[sliderId] + 1) % slideCount;
-        slider.style.transform = `translateX(-${sliders[sliderId] * 100}%)`;
-      }, 3000);
-    });
-  </script>
+    setTimeout(() => {
+      lightbox.classList.add('hidden');
+    }, 300);
+  }
+
+   // Klik di overlay -> close
+  lightbox.addEventListener('click', function() {
+    closeLightbox();
+  });
+
+  // Hentikan klik pada gambar supaya tidak menutup lightbox
+  lightboxImg.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+</script>
 
   </body>
 </html>
